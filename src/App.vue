@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#171717] text-[#A3ABB2] font-Poppins font-medium text-sm sm:text-[22px]">
+  <section class="bg-[#171717] text-[#A3ABB2] font-Poppins font-medium text-sm sm:text-[22px] sm:leading-8">
     <div class="max-w-[797px] m-auto px-5 pt-10 pb-10">
       <!-- Profile -->
       <div class="w-full flex flex-col sm:flex-row items-center justify-center gap-[40px]">
@@ -8,7 +8,7 @@
         </div>
         <div class="flex flex-col items-center sm:items-start">
           <h1 class="text-[32px] sm:text-[46px] text-white leading-[76px]">Radyan Bintang</h1>
-          <h2 class="mt-2">Junior Web Developer</h2>
+          <h2 class="sm:mt-2">Junior Web Developer</h2>
           <div class="media flex gap-6 mt-6">
             <a v-for="media in medias" :key="media" :href="`${media.ref}`"><i :class="`${media.link}`"
                 class="text-3xl text-[36px]"></i></a>
@@ -18,8 +18,8 @@
       <!-- Description -->
       <div class="mt-7 sm:mt-12 md:w-[634px] flex justify-center gap- sm:gap-[90px] py-5 m-auto">
         <div v-for="profile in profiles" :key="profile" class="">
-          <h1 align="center" class="text-2xl">{{ profile.p1 }}</h1>
-          <h1 align="center">{{ profile.p2 }}</h1>
+          <h1 align="center" class="text-base sm:text-2xl">{{ profile.p1 }}</h1>
+          <h1 align="center" >{{ profile.p2 }}</h1>
         </div>
       </div>
       <!-- CV Contact button -->
@@ -61,14 +61,14 @@ export default {
       { link: 'fa-brands fa-linkedin', ref: '' },
     ]
     let profiles = [
-      { p1: '1 years', p2: 'Years of work experience' },
+      { p1: '-1 years', p2: 'Years of work experience' },
       { p1: '50+', p2: 'Completed projects' },
       { p1: '20+', p2: 'Satisfied customers' },
     ]
     let portfolios =[
-      {img : 'Salty.jpg', link : 'https:/.app/ss'},
+      {img : 'Salty.jpg', link : 'https://portfolio-rdynxyz.vercel.app'},
+      {img : 'Eunoia.jpg', link : 'https://rdynxyz.github.io/eunoia/'},
       {img : 'Real State.jpg', link : 'https://realstate-rdynxyz.vercel.app'},
-      {img : '', link : ''},
       {img : '', link : ''},
     ]
     return { medias, profiles, portfolios }
