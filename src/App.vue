@@ -66,7 +66,7 @@ export default {
       { p1: '20+', p2: 'Satisfied customers' },
     ]
     let portfolios =[
-      {img : 'Salty.jpg', link : 'https:/.app/'},
+      {img : 'Salty.jpg', link : 'https:/.app/ss'},
       {img : 'Real State.jpg', link : 'https://realstate-rdynxyz.vercel.app'},
       {img : '', link : ''},
       {img : '', link : ''},
