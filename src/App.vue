@@ -69,7 +69,6 @@ export default {
       {img : 'Salty.jpg', link : 'https://portfolio-rdynxyz.vercel.app'},
       {img : 'Eunoia.jpg', link : 'https://rdynxyz.github.io/eunoia/'},
       {img : 'Real State.jpg', link : 'https://realstate-rdynxyz.vercel.app'},
-      {img : '', link : ''},
     ]
     return { medias, profiles, portfolios }
   }
