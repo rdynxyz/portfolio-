@@ -10,7 +10,7 @@
           <h1 class="text-[32px] sm:text-[46px] text-white leading-[76px]">Radyan Bintang</h1>
           <h2 class="mt-2">Junior Web Developer</h2>
           <div class="media flex gap-6 mt-6">
-            <a v-for="media in medias" :key="media" href=""><i :class="`${media.link}`"
+            <a v-for="media in medias" :key="media" :href="`${media.ref}`"><i :class="`${media.link}`"
                 class="text-3xl text-[36px]"></i></a>
           </div>
         </div>
@@ -24,8 +24,13 @@
       </div>
       <!-- button -->
       <div class="mt-7 sm:mt-12 sm:w-[618px] flex justify-between m-auto">
-        <button class="bg-white text-[#171717] w-[158px] sm:w-[290px] h-[44px] sm:h-[80px] rounded-[10px]">Download CV</button>
-        <button class="bg-[#242424] w-[158px] sm:w-[290px] h-[44px] sm:h-[80px] rounded-[10px]">Contact Me</button>
+        <a href="https://drive.google.com/file/d/1ACfXB9ZZkEVDf0WjpgsbvgDLq7h924Lk/view">
+          <button class="bg-white hover:bg-white/90 duration-100 text-[#171717] w-[158px] sm:w-[290px] h-[44px] sm:h-[80px] rounded-[10px]">Download CV</button>
+
+        </a>
+        <a href="mailto:radyan6661@gmail.com ">
+          <button class="bg-[#242424] w-[158px] sm:w-[290px] h-[44px] sm:h-[80px] rounded-[10px]">Contact Me</button>
+        </a>
       </div>
       <!-- Tabs button -->
       <div class="w-full h-[116px] mt-12 sm:mt-20 bg-[#242424] rounded-[20px] p-[18px] flex justify-between">
@@ -45,16 +50,7 @@
             <img :src="`./Salty.jpg`" alt="" class="rounded-2xl">
           </a>
         </div>
-        <div class="rounded-2xl h-[226px] overflow-hidden">
-          <a href="https://6388c2695b2ccc172e721076--rdyn.netlify.app/">
-            <img :src="`./Salty.jpg`" alt="" class="rounded-2xl">
-          </a>
-        </div>
-        <div class="rounded-2xl h-[226px] overflow-hidden">
-          <a href="https://6388c2695b2ccc172e721076--rdyn.netlify.app/">
-            <img :src="`./Salty.jpg`" alt="" class="rounded-2xl">
-          </a>
-        </div>
+
       </div>
       <!-- Credit -->
       <h1 class="text-center mt-32">© Radyan Bintang. 2022 All rigths reserved</h1>
@@ -66,9 +62,9 @@
 export default {
   setup() {
     let medias = [
-      { link: 'fa-brands fa-github' },
-      { link: 'fa-brands fa-instagram' },
-      { link: 'fa-brands fa-linkedin' },
+      { link: 'fa-brands fa-github', ref: 'https://github.com/rdynxyz' },
+      { link: 'fa-brands fa-instagram', ref: 'https://www.instagram.com/radyanbintang/' },
+      { link: 'fa-brands fa-linkedin', ref: '' },
     ]
     let profiles = [
       { p1: '1 years', p2: 'Years of work experience' },
