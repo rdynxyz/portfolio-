@@ -36,12 +36,13 @@
       </div>
       <!-- Tabs button -->
       <div class="w-full h-[96px] mt-12 sm:mt-20 bg-[#242424] rounded-[20px] p-4 flex justify-between">
-        <button class="h-16 w-[350px] bg-[#171717] rounded-[10px]">Portfolio</button>
-        <button v-on:click="clicked = !clicked" v-bind:class="{ 'bg-[#171717]': clicked, 'bg-transparent': !clicked }"
-          class="h-16 w-[350px] rounded-[10px]">Skills</button>
+        <button @click="skillOpen()" :class="[open ? ' bg-transparent' : 'bg-[#171717]'] " 
+        class="h-16 w-[350px] rounded-[10px]">Portfolio</button>
+        <button @click="skillOpen()" :class="[open ? 'bg-[#171717]' : 'bg-transparent']" 
+        class="h-16 w-[350px] rounded-[10px]">Skills</button>
       </div>
       <!-- Portfolio -->
-      <div class="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-8" :class="[open ? 'hidden' : 'block']">
         <!-- Project -->
         <div v-for="portfolio in portfolios" :key="portfolio"
           class="bg-[#242424] rounded-2xl relative overflow-hidden border-[#A3ABB2] border-2">
@@ -58,8 +59,8 @@
         </div>
       </div>
       <!-- Small Projects -->
-      <h1 class="mt-10"> <span class="text-white">#</span> Small-projects</h1>  
-      <div class="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-8">
+      <h1 class="mt-10" :class="[open ? 'hidden' : 'block']"> <span class="text-white">#</span> Small-projects</h1>  
+      <div class="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-8" :class="[open ? 'hidden' : 'block']">
         <div v-for="project in projects" :key="project"
           class="bg-[#242424] rounded-2xl relative overflow-hidden border-[#A3ABB2] border-2">
           <div class="group rounded-t-2xl h-[226px] overflow-hidden relative border-[#A3ABB2] border-b-2">
@@ -74,6 +75,17 @@
           </div>
         </div>
       </div>
+      <!-- Skill -->
+      <div class="mt-8 w-full"  :class="[open ? 'block' : 'hidden']">
+        <div v-for="skill in skills" :key="skill" class="mt-5">
+          <div class="flex justify-between">
+            <h1>{{skill.name}}</h1>
+          </div>
+          <div class="w-[100%] h-4 bg-[#242424] relative rounded-md">
+            <div class="bg-white absolute h-4 rounded-md" :class="`w-${skill.percentage}`"></div>
+          </div>
+        </div>
+      </div>
       <!-- Credit -->
       <h1 class="text-center mt-32">© Radyan Bintang. 2022 All rigths reserved</h1>
     </div>
@@ -81,6 +93,7 @@
 </template>
 
 <script>
+import {ref} from '@vue/reactivity'
 export default {
   setup() {
     let medias = [
@@ -103,7 +116,17 @@ export default {
       { img: 'tic-tac-toe.jpg', link: 'https://tic-tac-toe-rdynxyz.vercel.app/', name: 'Tic Tac Toe Game', built: 'Vue Tailwind' },
       { img: 'Real State.jpg', link: 'https://simple-calculator-rdynxyz.vercel.app', name: 'Simple Calculator', built: 'HTML JS' },
     ]
-    return { medias, profiles, portfolios, projects }
+    let skills = [
+      { name : 'HTML & CSS FRAMEWORK', percentage : '3/4'},
+      { name : 'JS FRAMEWORK', percentage : '1/2'},
+      { name : 'PHP', percentage : '1/4'},
+      { name : 'FIGMA ', percentage : '3/4'},
+    ]
+    let open = ref(true)
+    function skillOpen(){
+      open.value = !open.value
+    }
+    return { medias, profiles, portfolios, projects, skillOpen, open, skills}
   }
 }
 </script>
