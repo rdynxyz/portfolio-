@@ -58,7 +58,7 @@
         </div>
       </div>
       <!-- Small Projects -->
-      <h1 class="mt-10"> <span class="text-white">#</span> Small-projects</h1>
+      <h1 class="mt-10"> <span class="text-white">#</span> Small-projects</h1>  
       <div class="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-8">
         <div v-for="project in projects" :key="project"
           class="bg-[#242424] rounded-2xl relative overflow-hidden border-white border-2">
@@ -91,7 +91,7 @@ export default {
     let profiles = [
       { p1: '1', p2: 'Year of work experience' },
       { p1: '5+', p2: 'Completed', p3: 'web applications' },
-      { p1: '5+', p2: 'Small projects' },
+      { p1: '5+', p2: 'Personal small projects' },
     ]
     let portfolios = [
       { img: 'Salty.jpg', link: 'https://salty-rdynxyz.vercel.app/', name: 'Salty - Travel Website', built: 'Vue Tailwind' },
