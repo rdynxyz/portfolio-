@@ -82,7 +82,7 @@
             <h1>{{skill.name}}</h1>
           </div>
           <div class="w-[100%] h-4 bg-[#242424] relative rounded-md">
-            <div class="bg-white absolute h-4 rounded-md" :class="`w-${skill.percentage}`"></div>
+            <div class="bg-white absolute h-4 rounded-md" :class="`${skill.percentage}`"></div>
           </div>
         </div>
       </div>
@@ -117,12 +117,12 @@ export default {
       { img: 'Real State.jpg', link: 'https://simple-calculator-rdynxyz.vercel.app', name: 'Simple Calculator', built: 'HTML JS' },
     ]
     let skills = [
-      { name : 'HTML & CSS FRAMEWORK', percentage : '3/4'},
-      { name : 'JS FRAMEWORK', percentage : '1/2'},
-      { name : 'PHP', percentage : '1/4'},
-      { name : 'FIGMA ', percentage : '3/4'},
+      { name : 'HTML & CSS FRAMEWORK', percentage : 'w-[80%]'},
+      { name : 'JS FRAMEWORK', percentage : 'w-[50%]'},
+      { name : 'PHP', percentage : 'w-[25%]'},
+      { name : 'FIGMA ', percentage : 'w-[50%]'},
     ]
-    let open = ref(true)
+    let open = ref(false)
     function skillOpen(){
       open.value = !open.value
     }
