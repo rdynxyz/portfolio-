@@ -44,15 +44,15 @@
       <div class="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Project -->
         <div v-for="portfolio in portfolios" :key="portfolio"
-          class="bg-[#242424] rounded-2xl relative overflow-hidden border-white border-2">
-          <div class="group h-[226px] overflow-hidden relative border-white border-b-2">
+          class="bg-[#242424] rounded-2xl relative overflow-hidden border-[#A3ABB2] border-2">
+          <div class="group h-[226px] overflow-hidden relative border-[#A3ABB2] border-b-2">
             <img :src="`${portfolio.img}`" alt="" class="">
           </div>
           <div class=" w-full p-4 font-normal text-base">
             <h1 class=" font-medium text-white">{{ portfolio.name }}</h1>
             <h1 class="mt-3">Built with : {{ portfolio.built }}</h1>
             <a :href="`${portfolio.link}`" class="relative rounded-2xl">
-              <button class="mt-3 underline hover:text-white ">View </button>
+              <button class="mt-3 underline hover:text-white ">View</button>
             </a>
           </div>
         </div>
@@ -61,8 +61,8 @@
       <h1 class="mt-10"> <span class="text-white">#</span> Small-projects</h1>  
       <div class="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-8">
         <div v-for="project in projects" :key="project"
-          class="bg-[#242424] rounded-2xl relative overflow-hidden border-white border-2">
-          <div class="group rounded-t-2xl h-[226px] overflow-hidden relative border-white border-b-2">
+          class="bg-[#242424] rounded-2xl relative overflow-hidden border-[#A3ABB2] border-2">
+          <div class="group rounded-t-2xl h-[226px] overflow-hidden relative border-[#A3ABB2] border-b-2">
             <img :src="`${project.img}`" alt="" class="">
           </div>
           <div class=" w-full p-4 font-normal text-base">
