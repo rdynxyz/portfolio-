@@ -101,15 +101,16 @@ export default {
       { link: 'fa-brands fa-linkedin', ref: '' },
     ]
     let profiles = [
-      { p1: '1', p2: 'Year of work experience' },
+      { p1: '-1', p2: 'Year of work experience' },
       { p1: '5+', p2: 'Completed', p3: 'web applications' },
       { p1: '5+', p2: 'Personal small projects' },
     ]
     let portfolios = [
       { img: 'Salty.jpg', link: 'https://salty-rdynxyz.vercel.app/', name: 'Salty - Travel Website', built: 'Vue Tailwind' },
-      { img: 'Eunoia.jpg', link: 'https://rdynxyz.github.io/eunoia/', name: 'Eunoia - Service Website', built: 'HTML JS Tailwind' },
-      { img: 'Real State.jpg', link: 'https://realstate-rdynxyz.vercel.app', name: 'Reis - Real State Website', built: 'HTML JS Tailwind' },
+      { img: 'Eunoia.jpg', link: 'https://rdynxyz.github.io/eunoia/', name: 'Eunoia - Service Website', built: 'HTML Tailwind JS ' },
+      { img: 'Real State.jpg', link: 'https://realstate-rdynxyz.vercel.app', name: 'Reis - Real State Website', built: 'HTML Tailwind JS' },
       { img: 'Portfolio.jpg', link: 'https://portfolio-rdynxyz.vercel.app', name: 'Portfolio - You’re using it rn', built: 'Vue Tailwind' },
+      { img: 'meovie.jpg', link: 'https://meovie-rdynxyz.vercel.app', name: 'Meovie - Movie information', built: 'HTML Tailwind JS' },
     ]
     let projects = [
       { img: 'tic-tac-toe.jpg', link: 'https://tic-tac-toe-rdynxyz.vercel.app/', name: 'Tic Tac Toe Game', built: 'Vue Tailwind' },
@@ -117,7 +118,7 @@ export default {
     ]
     let skills = [
       { name: 'HTML & CSS FRAMEWORK', percentage: 'w-[80%]' },
-      { name: 'JS FRAMEWORK', percentage: 'w-[50%]' },
+      { name: 'JS FRAMEWORK', percentage: 'w-[40%]' },
       { name: 'PHP', percentage: 'w-[25%]' },
       { name: 'FIGMA ', percentage: 'w-[50%]' },
     ]
