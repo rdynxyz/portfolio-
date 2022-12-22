@@ -106,15 +106,40 @@ export default {
       { p1: '5+', p2: 'Personal small projects' },
     ]
     let portfolios = [
-      { img: 'Salty.jpg', link: 'https://salty-rdynxyz.vercel.app/', name: 'Salty - Travel Website', built: 'Vue Tailwind' },
-      { img: 'Eunoia.jpg', link: 'https://rdynxyz.github.io/eunoia/', name: 'Eunoia - Service Website', built: 'HTML Tailwind JS ' },
-      { img: 'Real State.jpg', link: 'https://realstate-rdynxyz.vercel.app', name: 'Reis - Real State Website', built: 'HTML Tailwind JS' },
-      { img: 'Portfolio.jpg', link: 'https://portfolio-rdynxyz.vercel.app', name: 'Portfolio - You’re using it rn', built: 'Vue Tailwind' },
-      { img: 'meovie.jpg', link: 'https://meovie-rdynxyz.vercel.app', name: 'Meovie - Movie information', built: 'HTML Tailwind JS' },
+      {
+        img: 'Salty.webp', 
+        link: 'https://salty-rdynxyz.vercel.app/', 
+        name: 'Salty - Travel Website', 
+        built: 'Vue Tailwind' },
+      { 
+        img: 'Eunoia.webp', 
+        link: 'https://rdynxyz.github.io/eunoia/', 
+        name: 'Eunoia - Website Services', 
+        built: 'HTML Tailwind JS' },
+      { 
+        img: 'Real State.webp', 
+        link: 'https://realstate-rdynxyz.vercel.app',
+        name: 'Reis - Real State Website', 
+        built: 'HTML Tailwind JS' },
+      { 
+        img: 'Portfolio.webp', 
+        link: 'https://portfolio-rdynxyz.vercel.app', 
+        name: 'Portfolio - You’re using it rn', 
+        built: 'Vue Tailwind' },
+      { 
+        img: 'meovie.webp', 
+        link: 'https://meovie-rdynxyz.vercel.app', 
+        name: 'Meovie - Movie information', 
+        built: 'HTML Tailwind JS' },
+      { 
+        img: 'doyan-seafood.webp', 
+        link: 'https://doyan-seafood.vercel.app', 
+        name: 'Doyan Seafood - Restaurant', 
+        built: 'Vue Tailwind' },
     ]
     let projects = [
-      { img: 'tic-tac-toe.jpg', link: 'https://tic-tac-toe-rdynxyz.vercel.app/', name: 'Tic Tac Toe Game', built: 'Vue Tailwind' },
-      { img: 'Real State.jpg', link: 'https://simple-calculator-rdynxyz.vercel.app', name: 'Simple Calculator', built: 'HTML JS' },
+      { img: 'tic-tac-toe.webp', link: 'https://tic-tac-toe-rdynxyz.vercel.app/', name: 'Tic Tac Toe Game', built: 'Vue Tailwind' },
+      { img: 'Real State.webp', link: 'https://simple-calculator-rdynxyz.vercel.app', name: 'Simple Calculator', built: 'HTML JS' },
     ]
     let skills = [
       { name: 'HTML & CSS FRAMEWORK', percentage: 'w-[80%]' },
