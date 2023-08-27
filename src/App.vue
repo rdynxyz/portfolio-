@@ -108,7 +108,7 @@ export default {
     let portfolios = [
       {
         img: 'lush.webp', 
-        link: 'lush-plant-shop.vercel.app/', 
+        link: 'lush-plant-shop.vercel.app', 
         name: 'Lush - Plant Shop', 
         built: 'Vue Tailwind' },
       {
@@ -143,7 +143,7 @@ export default {
         built: 'Vue Tailwind' },
     ]
     let projects = [
-      { img: 'tic-tac-toe.webp', link: 'https://tic-tac-toe-rdynxyz.vercel.app', name: 'Tic Tac Toe Game', built: 'Vue Tailwind' },
+      { img: 'tic-tac-toe.webp', link: 'https://tic-tac-toe-rdynxyz.vercel.app/', name: 'Tic Tac Toe Game', built: 'Vue Tailwind' },
       { img: 'tic-tac-toe.webp', link: 'https://simple-calculator-rdynxyz.vercel.app', name: 'Simple Calculator', built: 'HTML JS' },
     ]
     let skills = [
