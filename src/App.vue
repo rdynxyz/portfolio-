@@ -108,7 +108,7 @@ export default {
     let portfolios = [
       {
         img: 'lush.webp', 
-        link: 'lush-plant-shop.vercel.app', 
+        link: 'https://lush-rdynxyz.vercel.app/', 
         name: 'Lush - Plant Shop', 
         built: 'Vue Tailwind' },
       {
