@@ -4,14 +4,14 @@
       <!-- Profile -->
       <div class="w-full flex flex-col sm:flex-row items-center justify-center gap-[40px]">
         <div class="p-1 w-[215px] bg-[#A3ABB2] rounded-full">
-          <img :src="`./PP.jpg`" alt="" class="w-full rounded-full ">
+          <img :src="`./PP2.png`" alt="" class="w-full rounded-full ">
         </div>
         <div class="flex flex-col items-center sm:items-start">
           <h1 class="text-[32px] sm:text-[46px] text-white leading-[76px]">Radyan Bintang</h1>
-          <h2 class="sm:mt-2">Junior Web Developer</h2>
+          <h2 class="sm:mt-2">Fullstak Web Developer Wannabe</h2>
           <div class="media flex gap-6 mt-6">
             <a v-for="media in medias" :key="media" :href="`${media.ref}`"><i :class="`${media.link}`"
-                class="text-3xl text-[36px]"></i></a>
+                class="text-3xl text-[36px] hover:text-white hover:relative hover:bottom-[1px] duration-150"></i></a>
           </div>
         </div>
       </div>
@@ -78,7 +78,8 @@
       <!-- Skill -->
       <div class="mt-8 w-full" :class="[open ? 'block' : 'hidden']">
         <div v-for="skill in skills" :key="skill" class="mt-5">
-          <div class="flex justify-between">
+          <div class="flex items-center gap-2">
+            <i :class="`${skill.icon}`"></i>
             <h1>{{ skill.name }}</h1>
           </div>
           <div class="w-[100%] h-4 bg-[#242424] relative rounded-md">
@@ -148,10 +149,11 @@ export default {
       { img: 'tic-tac-toe.webp', link: 'https://simple-calculator-rdynxyz.vercel.app', name: 'Simple Calculator', built: 'HTML JS' },
     ]
     let skills = [
-      { name: 'HTML & CSS FRAMEWORK', percentage: 'w-[80%]' },
-      { name: 'JS FRAMEWORK', percentage: 'w-[40%]' },
-      { name: 'PHP', percentage: 'w-[25%]' },
-      { name: 'FIGMA ', percentage: 'w-[50%]' },
+      { icon: 'fa-brands fa-html5', name: 'HTML & TAILWIND CSS', percentage: 'w-[80%]' },
+      { icon: 'fa-brands fa-vuejs', name: 'VUE JS', percentage: 'w-[40%]' },
+      { icon: 'fa-brands fa-php', name: 'PHP', percentage: 'w-[25%]' },
+      { icon: 'fa-brands fa-golang', name: 'GOLANG', percentage: 'w-[5%]' },
+      { icon: 'fa-brands fa-figma', name: 'FIGMA ', percentage: 'w-[50%]' },
     ]
     let open = ref(false)
     function skillOpen() {
