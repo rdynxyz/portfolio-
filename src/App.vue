@@ -24,7 +24,7 @@
       </div>
       <!-- CV Contact button -->
       <div class="mt-8 sm:w-[618px] flex justify-between m-auto">
-        <a href="https://drive.google.com/file/d/1xBNE4UghZ4oVjVXTMsT-bTAhQj9swe-M/view" class="w-[48%] sm:w-auto">
+        <a href="https://drive.google.com/file/d/1xBNE4UghZ4oVjVXTMsT-bTAhQj9swe-M/vie" class="w-[48%] sm:w-auto">
           <button
             class="bg-white hover:bg-white/90 duration-100 text-[#171717] w-full sm:w-[290px] h-[44px] sm:h-16 rounded-[10px]">Download
             CV<i class="fa-solid fa-file-arrow-down ml-2"></i></button>
@@ -111,36 +111,36 @@ export default {
         link: 'https://lush-rdynxyz.vercel.app/', 
         name: 'Lush - Plant Shop', 
         built: 'Vue Tailwind' },
-      {
-        img: 'Salty.webp', 
-        link: 'https://salty-rdynxyz.vercel.app/', 
-        name: 'Salty - Travel Website', 
+      { 
+        img: 'doyan-seafood.webp', 
+        link: 'https://doyan-seafood.vercel.app', 
+        name: 'Doyan Seafood - Restaurant', 
         built: 'Vue Tailwind' },
       { 
         img: 'Eunoia.webp', 
         link: 'https://rdynxyz.github.io/eunoia/', 
         name: 'Eunoia - Website Services', 
         built: 'HTML Tailwind JS' },
-      { 
-        img: 'Real State.webp', 
-        link: 'https://realstate-rdynxyz.vercel.app',
-        name: 'Reis - Real State Website', 
-        built: 'HTML Tailwind JS' },
+      {
+        img: 'Salty.webp', 
+        link: 'https://salty-rdynxyz.vercel.app/', 
+        name: 'Salty - Travel Website', 
+        built: 'Vue Tailwind' },
       { 
         img: 'Portfolio.webp', 
         link: 'https://portfolio-rdynxyz.vercel.app', 
         name: 'Portfolio - You’re using it rn', 
         built: 'Vue Tailwind' },
       { 
+        img: 'Real State.webp', 
+        link: 'https://realstate-rdynxyz.vercel.app',
+        name: 'Reis - Real State Website', 
+        built: 'HTML Tailwind JS' },
+      { 
         img: 'meovie.webp', 
         link: 'https://meovie-rdynxyz.vercel.app', 
         name: 'Meovie - Movie information', 
         built: 'HTML Tailwind JS' },
-      { 
-        img: 'doyan-seafood.webp', 
-        link: 'https://doyan-seafood.vercel.app', 
-        name: 'Doyan Seafood - Restaurant', 
-        built: 'Vue Tailwind' },
     ]
     let projects = [
       { img: 'tic-tac-toe.webp', link: 'https://tic-tac-toe-rdynxyz.vercel.app/', name: 'Tic Tac Toe Game', built: 'Vue Tailwind' },
