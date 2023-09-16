@@ -24,7 +24,8 @@
       </div>
       <!-- CV Contact button -->
       <div class="mt-8 sm:w-[618px] flex justify-between m-auto">
-        <a href="https://drive.google.com/file/d/1xBNE4UghZ4oVjVXTMsT-bTAhQj9swe-M/vie" class="w-[48%] sm:w-auto">
+        <a href="" class="w-[48%] sm:w-auto">
+          <!-- https://drive.google.com/file/d/1xBNE4UghZ4oVjVXTMsT-bTAhQj9swe-M/view  -->
           <button
             class="bg-white hover:bg-white/90 duration-100 text-[#171717] w-full sm:w-[290px] h-[44px] sm:h-16 rounded-[10px]">Download
             CV<i class="fa-solid fa-file-arrow-down ml-2"></i></button>
